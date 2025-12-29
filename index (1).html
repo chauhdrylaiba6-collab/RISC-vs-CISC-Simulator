@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RISC vs CISC Instruction Set Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>RISC vs CISC Instruction Set Simulator</h1>
+    <p>Timing & Performance Comparison</p>
+</header>
+
+<main>
+    <div class="container">
+
+        <div class="card">
+            <h2>RISC Simulator</h2>
+            <p>Simple instructions, single-cycle execution</p>
+            <button onclick="runRISC()">Run RISC</button>
+            <div class="output" id="riscOutput"></div>
+        </div>
+
+        <div class="card">
+            <h2>CISC Simulator</h2>
+            <p>Complex instructions, multi-cycle execution</p>
+            <button onclick="runCISC()">Run CISC</button>
+            <div class="output" id="ciscOutput"></div>
+        </div>
+
+    </div>
+
+    <div class="compare">
+        <h2>Comparison Summary</h2>
+        <button onclick="compare()">Compare Both</button>
+        <div class="output" id="compareOutput"></div>
+    </div>
+</main>
+
+<footer>
+    <p>Web Engineering Project | RISC vs CISC</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
